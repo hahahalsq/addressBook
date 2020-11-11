@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body {
+    background-color: #f5f5f5;
+    font-size: 12px;
+    font-family: 'PingFang SC Regular', 'PingFang SC';
+    width: 100%;
+    height: 100%;
+    min-width: 320px;
+    max-width: 480px;
+    position: relative;
+}
+.cityPage{
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid black; */
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+.cityContent{
+    width: 100%;
+    /*height: 140px;*/
+    /* border: 1px solid black; */
+    background: #f7f7f9;
+    position: fixed;
+    z-index: 9999;
+
+}
+.inputBox input{
+    width: 90%;
+    height: 30px;
+    border: 1px solid rgb(215, 215, 215);
+    outline: none;
+    background:#fff;
+    margin-left: 4%;
+    border-radius: 4px;
+    padding-left: 4px;
+    color: #9e9e9e;
+    font-size: 14px;
+    margin-bottom: 16px;
+    margin-top: 14px;
+
+}
+.localCity{
+    color: #333;
+    font-size: 13px;
+    font-weight: bold;
+    margin-left:4.5% ;
+    /*margin-bottom: 16px;*/
+    margin-top:0.8rem;
+}
+.cityname{
+    font-size: 13px;
+    margin-left:4.5% ;
+    margin-bottom: 16px;
+}
+
+.city .city-wrapper {
+    position: fixed;
+    top: 60px;
+    bottom: 0;
+    width: 100%;
+    background-color: #ffffff;
+}
+.city .city-wrapper .cities .title {
+    height: 28px;
+    padding-left: 16px;
+    line-height: 28px;
+    /*background-color: #f5f5f5;*/
+    background-color: #ffffff;
+    font-family: Helvetica;
+    font-size:14px;
+    color: #878787;
+    margin-top:10px;
+}
+.city .city-wrapper .cities .item {
+    height: 44px;
+    padding: 0 16px;
+    line-height: 44px;
+    font-size: 14px;
+    background-color: #fff;
+}
+.city .city-wrapper .cities .item .name {
+    display: block;
+    position: relative;
+}
+.city .city-wrapper .cities .item .name:before,
+.city .city-wrapper .cities .item .name:after {
+    display: block;
+    position: absolute;
+    border-top: 1px solid #e5e5e5;
+    left: 0;
+    width: 100%;
+    content: ' ';
+}
+.city .city-wrapper .cities .item .name:before {
+    display: none;
+    top: 0;
+}
+.city .city-wrapper .cities .item .name:after {
+    display: block;
+    bottom: 0;
+}
+.city .city-wrapper .cities .item:active {
+    background-color: #fff;
+}
+.city .city-wrapper .cities .item:last-child .name:after {
+    display: none;
+}
+.city .city-wrapper .shortcut {
+    position: absolute;
+    z-index: 30;
+    width: 40px;
+    right: 0;
+    font-family: Helvetica;
+}
+.city .city-wrapper .shortcut .item {
+    height: 12px;
+    padding-top: 4px;
+    padding-left: 15px;
+    text-align: center;
+    font-size: 14px;
+    color: #9f9f9f
+}
+.city .city-wrapper .shortcut .itemB {
+    
+    padding-top: 4px;
+
+    text-align: right;
+    font-size: 10px;
+    color: #9f9f9f;
+}
+
+@media only screen and (max-height: 600px) {
+    .city .city-wrapper .shortcut .item {
+        padding-top: 4px;
+        padding-right:0.6rem;
+    }
+    .city .city-wrapper .shortcut .itemB {
+        padding-top: 4px;
+        padding-right:0.3rem;
+    }
+
+}
+
+
+/*------------------------------------------------------------*/
+.localCityItem{
+    background:linear-gradient(180deg,rgba(255,144,144,1) 0%,rgba(255,87,87,1) 100%);
+    color:#ffffff;
+    padding-left:1.3rem;
+    padding-right:1.3rem;
+    padding-top:5px;
+    padding-bottom:5px;
+    border-radius: 5px;
+    margin-top:0.8rem;
+}
+.localCityDiv{
+    display: flex;
+    align-items: center;
+    margin-left:4.5%;
+    flex-flow: row wrap;
+    margin-right:5.5%;
+}
+.localCityItemBorder{
+    width:25%;
+    display: flex;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #9f9f9f;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #9f9f9f;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #9f9f9f;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #9f9f9f;
+}
+
+/*------------------------------------------------------------*/
